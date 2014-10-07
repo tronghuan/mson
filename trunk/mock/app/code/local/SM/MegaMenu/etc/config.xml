@@ -1,4 +1,28 @@
 <?xml version="1.0"?>
 <config>
-
+    <modules>
+        <SM_MegaMenu>
+            <version>0.1.0</version>
+        </SM_MegaMenu>
+    </modules>
+    <admin>
+        <routers>
+            <megamenu>
+                <use>admin</use>
+                <args>
+                    <module>SM_MegaMenu</module>
+                    <frontName>megamenu</frontName>
+                </args>
+            </megamenu>
+        </routers>
+    </admin>
+    <adminhtml>
+        <layout>
+            <updates>
+                <megamenu>
+                    <file>megamenu.xml</file>
+                </megamenu>
+            </updates>
+        </layout>
+    </adminhtml>
 </config>
