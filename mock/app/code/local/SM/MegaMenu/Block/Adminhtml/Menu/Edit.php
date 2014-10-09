@@ -15,8 +15,8 @@ class SM_MegaMenu_Block_Adminhtml_Menu_Edit extends Mage_Adminhtml_Block_Widget_
         $this->_blockGroup = 'megamenu';
         $this->_controller = 'adminhtml_menu';
 
-        $this->_updateButton('save', 'label', Mage::helper('megamenu')->__('Save Item'));
-        $this->_updateButton('delete', 'label', Mage::helper('megamenu')->__('Delete Item'));
+        $this->_updateButton('save', 'label', Mage::helper('megamenu')->__('Save Menu Item'));
+        $this->_updateButton('delete', 'label', Mage::helper('megamenu')->__('Delete Menu Item'));
 
         $this->_addButton('saveandcontinue', array(
             'label'     => Mage::helper('adminhtml')->__('Save And Continue Edit'),
@@ -42,9 +42,9 @@ class SM_MegaMenu_Block_Adminhtml_Menu_Edit extends Mage_Adminhtml_Block_Widget_
     public function getHeaderText()
     {
         if( Mage::registry('menu_data') && Mage::registry('menu_data')->getId() ) {
-            return Mage::helper('megamenu')->__("Edit Item '%s'", $this->htmlEscape(Mage::registry('menu_data')->getTitle()));
+            return Mage::helper('megamenu')->__("Edit Menu Item '%s'", $this->htmlEscape(Mage::registry('menu_data')->getTitle()));
         } else {
-            return Mage::helper('megamenu')->__('Add Item');
+            return Mage::helper('megamenu')->__('Add Menu Item');
         }
     }
 }
