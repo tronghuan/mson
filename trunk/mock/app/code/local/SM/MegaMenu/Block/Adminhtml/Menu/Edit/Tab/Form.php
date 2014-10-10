@@ -24,8 +24,8 @@ class SM_MegaMenu_Block_Adminhtml_Menu_Edit_Tab_Form extends Mage_Adminhtml_Bloc
             'label'     => Mage::helper('megamenu')->__('Menu type'),
             'name'      => 'menu_type',
             'values'    => array(
-                '1'    =>"Custom Link",
-                '2'  =>"Category Link",
+                '1'     =>"Custom Link",
+                '2'     =>"Category Link",
                 '3'     =>"Block Link"
             )
         ));
@@ -38,9 +38,14 @@ class SM_MegaMenu_Block_Adminhtml_Menu_Edit_Tab_Form extends Mage_Adminhtml_Bloc
             'name'      => 'cate_id',
             'values' => $this->getCategories()
         ));
-        $fieldset->addField('block_link', 'text', array(
+//        $fieldset->addField('block_link', 'text', array(
+//            'label'     => Mage::helper('megamenu')->__('Block Link'),
+//            'name'      => 'block_link'
+//        ));
+        $fieldset->addField('block_link', 'select', array(
             'label'     => Mage::helper('megamenu')->__('Block Link'),
-            'name'      => 'block_link'
+            'name'      => 'block_link',
+            'values'   => Mage::getModel('megamenu/source_cms_block')->getAllBlock(),
         ));
         $fieldset->addField('menu_order', 'text', array(
             'label'     => Mage::helper('megamenu')->__('Sort order'),
@@ -102,6 +107,7 @@ class SM_MegaMenu_Block_Adminhtml_Menu_Edit_Tab_Form extends Mage_Adminhtml_Bloc
             3
         )
         );
+
         return parent::_prepareForm();
     }
     protected function getCategories(){
@@ -135,5 +141,11 @@ class SM_MegaMenu_Block_Adminhtml_Menu_Edit_Tab_Form extends Mage_Adminhtml_Bloc
             }
         }
         return $arr;
+    }
+    public function getBlockLink($blockId)
+    {
+        $html = $this->getLayout()->createBlock('cms/block')->setBlockId($blockId)->toHtml();
+
+        return $html;
     }
 }

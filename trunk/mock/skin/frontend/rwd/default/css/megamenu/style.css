@@ -30,7 +30,7 @@ body {
 	max-width: 1280px;
 	position: relative;
 	z-index: 999;
-	background: #613570;
+	background: #2888d2;
 }
 
 /* menu unorderlist layout */
@@ -44,7 +44,7 @@ body {
 	float: left;
 	height: 60px;
 	width: 10%;
-	border-left: 1px solid #542961;
+	border-left: 1px solid #1476bf;
 	white-space: nowrap;
 }
 
@@ -52,7 +52,7 @@ body {
 .Flat_mega_menu > ul > li:hover a,
 .Flat_mega_menu ul .user_login:hover .fa.fa-user,
 .Flat_mega_menu ul .search_bar:hover .fa.fa-search {
-	color: #613570;
+	color: #2888d2;
 	background: #FFFFFF;
 	transition: all 0.2s linear 0s;
 	-moz-transition: all 0.2s linear 0s;
@@ -121,7 +121,7 @@ body {
 	background-color: #FFFFFF;
 	padding-bottom: 15px;
 	padding-right: 25px;
-	border-bottom: 5px solid #613570;
+	border-bottom: 5px solid #2888d2;
 	display: none;
 	border-left: 1px solid #E4E4E4;
 	border-right: 1px solid #E4E4E4;
@@ -158,7 +158,7 @@ body {
 /* second level submenu layout */
 .Flat_mega_menu ul li .submenu.one_col li .submenu.one_col {
 	position: absolute;
-	left: 100%;
+	left: 103%;
 	top: -15px;
 	display: none;
 	width: 150px;
@@ -166,7 +166,7 @@ body {
 
 /* third level submenu layout */
 .Flat_mega_menu ul li .submenu.one_col li .submenu.one_col li .submenu.one_col {
-	left: 100%;
+	left: 103%;
 }
 
 /* submenu one_col list item first-child submenu layout */
@@ -181,7 +181,7 @@ body {
 	position: absolute;
 	left: 0px;
 	display: none;
-	border-bottom: 5px solid #613570;
+	border-bottom: 5px solid #2888d2;
 }
 
 /* search bar input text field layout */
@@ -202,7 +202,7 @@ body {
 	font-size: large;
 	padding-left: 10px;
 	padding-right: 10px;
-	background: #613570;
+	background: #2888d2;
 	color: #FFFFFF;
 	cursor: pointer;
 	border: none;
@@ -215,7 +215,7 @@ body {
 	background: #FFFFFF;
 	padding: 20px;
 	display: none;
-	border-bottom: 5px solid #613570;
+	border-bottom: 5px solid #2888d2;
 }
 
 /* user login form table layout */
@@ -237,7 +237,7 @@ body {
 	border: 0px;
 	width: 181px;
 	margin-top: 15px;
-	background: #613570;
+	background: #2888d2;
 	font-size: medium;
 	color: #FFFFFF;
 	cursor: pointer
@@ -257,7 +257,7 @@ body {
 	width: 260px;
 	padding: 20px;
 	display: none;
-	border-bottom: 5px solid #613570;
+	border-bottom: 5px solid #2888d2;
 }
 
 /* social bar list items layout */
@@ -321,7 +321,7 @@ body {
 	position: absolute;
 	left: 0px;
 	top: 60px;
-	border-bottom: 5px solid #613570;
+	border-bottom: 5px solid #2888d2;
 	padding-bottom: 20px;
 }
 
@@ -338,7 +338,7 @@ body {
 	height: 100%;
 	width: 100%;
 	border-radius: 5px;
-	border: 5px solid #F8F4F9;
+	border: 5px solid #e9f0f6;
 	cursor: pointer;
 }
 
@@ -377,7 +377,7 @@ body {
 	width: 100%;
 	min-height: 100px;
 	background: #FFFFFF;
-	border-bottom: 5px solid #613570;
+	border-bottom: 5px solid #2888d2;
 	padding-bottom: 20px;
 }
 
@@ -529,7 +529,6 @@ body {
 	display:none;
 }
 
-
 /* default animation keyframes */
 @keyframes display_submenus {
  0% {
@@ -643,7 +642,7 @@ opacity:1
 	height: 60px;
 	width: 100%;
 	border-left: none;
-	border-bottom: 1px solid #542961;
+	border-bottom: 1px solid #1476bf;
 	position:relative;
 }
 
@@ -662,7 +661,7 @@ opacity:1
 
 /* menu list litem 2 child layout */
 .Flat_mega_menu > ul > li:nth-child(2){
-	border-top: 1px solid #542961;
+	border-top: 1px solid #1476bf;
 }
 
 /* submenu one_col + submenu two_col layout */
@@ -848,7 +847,7 @@ opacity:1
 .Flat_mega_menu ul .search_bar {
 	width: 100%;
 	float: left;
-	background: #613570;
+	background: #2888d2;
 }
 /* search bar layout */
 .Flat_mega_menu ul .search_bar ul {
