@@ -17,9 +17,9 @@ class SM_MegaMenu_Adminhtml_MenuController extends Mage_Adminhtml_Controller_Act
         echo __METHOD__;
         $this->loadLayout();
         $this->renderLayout();
-        $rootCatId = Mage::app()->getStore()->getRootCategoryId();
         $catlistHtml = $this->getTreeCategories(1, false);
-        echo $catlistHtml;
+//        echo $catlistHtml;
+//        die();
     }
 
     function getTreeCategories($parentId, $isChild){

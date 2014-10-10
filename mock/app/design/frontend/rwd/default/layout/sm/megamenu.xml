@@ -9,7 +9,7 @@
             <action method="unsetChild"><name>top.menu</name></action>
             <block type="core/text_list" name="top.menu" as="topMenu" translate="label">
                 <label>Navigation Bar</label>
-                <block type="megamenu/adminhtml_menu" name="catalog.topnav" template="megamenu/topmenu.phtml"/>
+                <block type="megamenu/menu" name="catalog.topnav" template="megamenu/topmenu.phtml"/>
             </block>
         </reference>
 
